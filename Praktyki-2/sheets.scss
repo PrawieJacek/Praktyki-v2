@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background: rgb(255, 250, 251);
+}
+.main-cont{
+    width:720px;
+    height:4507px;
+    margin: 0 auto;
+    background: white;
+    
+}
+.cont-1{
+    width: auto;
+    height: 1738.5;
+    background: #EDCBC7;
+    &__img1{
+        margin-top: 40px;
+        margin-left: 160px;
+        width: 400px;
+        height: 72.5px;
+        
+    }
+    &__p1{
+        margin-top: 10px;
+        margin-left: 40px;
+        width: 640px;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 27.6px;
+        
+    }
+    &__sale1{
+        width: 720px;
+        height: 57px;
+        margin-top: 40px;
+        background: #97C8FB;
+        &__p1{
+            width: 620px;
+            height: 29px;
+            margin-left: 50px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            font-family: "Open Sans";
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 29.3px;
+            text-align: center;
+            text-transform: uppercase;
+            
+        }
+    }
+    &__comment1{
+        width: 640px;
+        height: 192px;
+        margin-left: 40px;
+        margin-top: 40px;
+        border-top: 3px black solid;
+        border-bottom: 3px black solid;
+        &__p1{
+            width: 488px;
+            height: 114px;
+            margin-left:76px;
+            font-family: "Open Sans";
+            font-size: 31.4px;
+            font-weight: 400;
+            line-height: 37.95px;
+            text-align: justify;
+        }
+        & em{
+            display: inline-block;
+            width: 640px;
+            height: 28px;
+            margin-top:20px ;
+            font-family: Open sans;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 27.6px;
+            text-align: center;
+            
+        }
+
+    }
+    &__img2{
+
+        width: 720px;
+        height: 845px;
+        margin-top: 50px;
+        
+    }
+    &__under-img{
+        width:589px;
+        height:289px;
+        margin-top: 40px;
+        margin-left: 65.5px;
+        &__txt1{
+            font-family: Open sans;
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 32.2px;
+            text-align: center;
+        }
+        &__btn{
+            display: inline-block;
+            width: 509px;
+            height: 78px;
+            margin-top: 40px;
+            margin-left: 40px;
+            gap: 10px;
+            border: 3px 0px 0px 0px;
+            background-color: white;
+            border: 3px solid #000000;
+            text-decoration: none;
+            & h5{
+                margin-top: 20px;
+
+                font-family: Open sans;
+                font-size: 33px;
+                font-weight: 400;
+                line-height: 37.95px;
+                text-transform: uppercase;
+                text-align: center;
+                color: black;
+                                
+            }
+
+            
+            
+        }
+
+
+        
+    }
+}
+
+.cont-2{
+    width: auto;
+    height: 2157px;
+    &__txt1{
+        width: 580px;
+        height: 138px;
+        margin-top: 40px;
+        margin-left: 80;
+        font-family: Open sans;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 68.99px;
+        text-align: center;
+    }
+    &__line{
+        display: block;
+        width: 640px; 
+        margin: 0 auto;
+        border: 3px solid #000000;
+        margin-top: 40px;
+        margin-bottom: 40px;
+       
+
+    }
+    &__window{
+        width: 720px;
+        height: 520px;
+        margin-top: 40px;
+
+        .product{
+            float: left;
+            width: 300px;
+            height: auto;
+            margin-left:40px;
+            &__img{
+                margin-top: 20px;
+
+            }
+            &__txt{
+                margin-top: 20px;
+                font-family: Helvetica;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 25.3px;
+                text-align: center;
+                
+            }
+            &__price{
+                margin-top:20px ;
+                margin-bottom: 20px;
+                font-family: Helvetica;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 27.6px;
+                text-align: center;
+                color: #E7686C;
+            }
+            &__btn{
+                display: inline-block;
+                margin-left: 63.5px;
+                padding: 10px 20px 10px 20px;
+                border: 2px solid #000000;
+                font-family: Helvetica;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 27.6px;
+                text-align: center;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+    }
+    &__opt{
+        display: inline-block;
+        width: 509px;
+        margin-left:105.5;
+        margin-bottom: 40px;
+        padding: 20px 0px 20px 0px;
+        border: 3px solid #000000;
+        font-family: open  ;
+        font-size: 33px;
+        font-weight: 400;
+        line-height: 37.95px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+    }
+}
+.cont-3{
+    background-color: #EFEFEF;
+    height:612px;
+    &__tutorial{
+        padding: 40px 0px 40px 0px;
+        text-align: center;
+        &-link{
+            
+            font-family: open sans;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 23px;
+            letter-spacing: 1px;
+            text-align: center;
+            text-decoration: none;
+            color:#000000;
+            
+        }
+        & em{
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 20px;
+            text-align: center;
+            
+        }
+    }
+    &__socialm{
+        width: 720px;
+        margin-left: 150px;
+        float: left;
+        &-box a{
+            margin-left:35px;
+        }
+        
+
+    }
+    &__txt1{
+        display: inline-block;
+        width: 640px;
+        margin-left:40px;
+        font-family: open sans;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: center;
+        &-p{
+            margin-top: 40px;
+        }
+    }
+    &__links{
+        height: 100px;
+        font-family: open sans;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        
+        &-link {
+            display: inline-block;
+            margin-top:40px ;
+            color: #000000;
+        }
+        & em{
+            height: 2px;
+            margin-left: 15px;
+            margin-right: 15px;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 20px ; 
+
+            
+        }
+    }
+}

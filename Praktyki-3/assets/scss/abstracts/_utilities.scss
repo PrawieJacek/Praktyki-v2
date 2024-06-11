@@ -1,0 +1,28 @@
+.u-blue-text {
+    color: #5F53D9 !important;
+}
+
+.u-text-right {
+    text-align: right !important;
+
+    @include respond (tab-med) {
+        text-align: left !important;
+    }
+}
+
+.u-padding-bottom {
+    padding-bottom: 110px !important;
+}
+
+.u-justify-center {
+    justify-content: center !important;
+}
+
+.u-margin-bottom {
+    margin-bottom: 100px !important;
+}
+
+.u-text-center {
+    text-align: center;
+}
+

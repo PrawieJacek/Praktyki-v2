@@ -1,0 +1,280 @@
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100px;
+}
+.cont1{
+    display: flex;
+    width: 100%;
+    height: 42px;
+    background-color: $gray;
+
+    &__d1{
+        width: 50%;
+        height: 100%;
+        margin-bottom: 10px;
+        &-p1{
+            margin-top:14px;
+            margin-left: 10%;
+            font-family: Hanken Grotesk;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+            color: $gray-txt;
+        }    
+
+    }
+    &__d2{
+        display: flex;
+        width: 50%;
+        height: 100%;
+        background: $gray;
+        &-txt{
+        display: flex;
+        margin-left: auto;
+        margin-right: 120px;
+        align-items: center;
+        font-family: Hanken Grotesk;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px; 
+        gap:14px;
+            &-p1{
+                display: flex;
+                gap: 6px;
+                color: $gray-txt;
+                @include respond(s-phone){font-size: 12px;}
+                & span{
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 18px;
+                }
+            }
+            &-p2{
+                display: flex;
+                gap: 6px;
+                color: $gray-txt;
+                @include respond(s-phone){font-size: 12px;}
+            }
+            &-p3{
+                display: flex;
+                gap: 6px;
+                color: $gray-txt;
+                @include respond(s-phone){font-size: 12px;}
+            }
+
+            &-span{
+                height: 18px;
+                border: 1px solid #D9D9D9
+            }
+        }       
+        
+        
+    }
+
+}
+.cont2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid $gray-border;
+
+    .logo-div{
+        display: flex;
+        width: 35%;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        &__bars a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 48px;
+            height: 48px;
+            background: $gray-box;
+            border-radius: 10px;
+        }
+        &__bars a:hover{
+            background: rgb(238, 238, 238);
+        }
+        @include respond(tab-land)
+        {
+            order: 1;
+            margin-left: 5%;
+        }
+    }
+    .search-div{
+        display: flex;
+        width: 35%;
+        align-items: center;
+        
+        margin-left: 5%;
+        &__bar{
+            display: flex;
+            align-items: center;
+            max-width: 507px;
+            width: 100%;
+            height:48px;
+            border-radius: 10px;
+            background: $gray-box;
+            &-1{
+                &-btn{
+                    margin-left: 15px;
+                    border: 0;
+                    background-color: transparent;
+                }
+                &-btn:hover{
+                    text-shadow: 0px 0px 2px white, 0 0 3px rgb(169, 169, 169);
+                }
+                &-btn:active{
+                    text-shadow: 0 0 4px rgb(149, 149, 149);
+                }
+            }
+            .ul{
+                display: inline-flex;
+                text-align: center;
+                margin-left: auto;
+                margin-right: 12px;
+                max-width: 50px;
+                width: 20%;
+                height: 40px;
+                a{  
+                    width: 100%;
+                    height: 100%;
+                }
+                a:hover{
+                    transition: all 0.3s;
+                    width: 100%;
+                    height: 100%;
+                    background-color:$white;
+                    border-radius: 100px;
+                }
+                .fa-list-ul{
+                    margin-top: 12px;
+                }
+            }
+            &-margin{
+                margin-left: 16px;
+            }
+
+            & input{
+                height: 18px;
+                max-width: 250px;
+                width: 100%;
+                margin-left: 10px;
+                margin-right: 10px;
+                border: 0;
+                background-color: transparent;
+                font-family: Hanken Grotesk;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+               
+            }
+            & input:focus{
+                outline: none;
+            }
+        }
+    }
+    .person-menu{
+        display: flex;
+        align-items: center;
+        width: 25%;
+        height: 100%;
+
+        &__cont{
+            display:flex;
+            flex-direction: row;
+            margin-left: 30px;
+            & span{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            & a{
+                font-family: HanKen Grotesk;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 18px;
+                text-align: left;
+                color: $gray-txt;
+            }
+            & i{
+                margin-right: 6px;
+            }
+        }
+        @include respond(tab-land)
+        {
+            order: 2;
+        }
+        @include respond(phone)
+        {
+            scale: 0.75;
+        }
+    }
+}
+@media (max-width: 80em) {
+    header{
+        height: 100%;
+    }
+    .cont1{
+        flex-direction: column;
+        align-content: center;
+    }
+    .cont1__d1{
+        display: none;
+        
+    }
+    .cont1__d2{
+        width: 100%;
+        margin-top: 10px;
+
+        &-txt{ 
+            margin: 0 auto;
+        }
+    }
+    .cont2{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .person-menu{
+            &__cont{
+                .cont1__d2-txt-span{
+                    height: 40px;
+                }
+                & span{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+                & a{
+                     font-size: 0px;
+                }
+                & i{
+                    padding: 10px 12px 10px 10px ;
+                    border-radius: 10px;
+                    font-size: 22px;
+                    margin-right: 0px;
+                }
+                & i:hover{
+                    transition: all 0.3s;
+                    background-color: $gray;
+                }
+            }
+        }
+        .search-div{ 
+            display: flex;
+            width: 40%;
+            align-items: center;
+            order: 3;
+            margin-bottom: 10px;
+            &__bar{
+                .ul{
+                    display: none;
+                }
+            }
+        }
+    }
+} 

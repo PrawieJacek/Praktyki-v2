@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Judson:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-size: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: rgb(226, 226, 226);
+  margin: 0;
+  
+}
+
+.main {
+  max-width: 600px;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+
+
+#logo1 {
+  display: block;
+  text-align: center;
+  padding-top: 42px;
+}
+
+.nr-zamowienia {
+  font-family: Judson;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34.89px;
+  margin-top: 58px;
+  text-align: center;
+}
+
+.data {
+  font-family: Judson;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20.7px;
+  text-align: left;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.zdj1 {
+  display: flex;
+  width: 91.3%;
+  height: 335px;
+  margin:0 auto;
+  margin-top:24px ;
+
+}
+
+.podzdj {
+  margin: 0 auto;
+  margin-top: 34px;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.41px;
+  color: #1F1F1F;
+  width: 313px;
+  height: 25px;
+}
+
+.podzdj2 {
+  max-width: 542px;
+  margin:0 auto;
+  margin-top: 12px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.05px;
+  text-align: center;
+}
+
+.podzdj3 {
+  width: 75px;
+  height: 15px;
+  margin-top: 11px;
+  margin: 0 auto;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: center;
+}
+.btn_div{
+  display: block;
+  text-align: center;
+  margin-top:24px;
+}
+.btn1 {
+  display: inline-block;
+
+  padding: 13px 30px 13px 38px;
+  border-radius: 8px;
+  background: #302F2F;
+  text-decoration-line: none;
+}
+.btn1__p1 {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  width: 128px;
+  height: 24px;
+  color: white;
+}
+
+.kont1 {
+  max-width: 548px;
+  width: 100%;
+  max-height: 578px;
+  height: 568px;
+  margin: 0 auto;
+  margin-top: 37px;
+  background-color: #F4F5F5;
+  
+}
+
+.kont1__p1 {
+  display: inline-block;
+  margin-left: 3.9%;
+  margin-top:22px;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.41px;
+  color: #1F1F1F;
+
+}
+.kont1__line {
+  width: 99.54%;
+  height: 0px;
+  margin-top: 13.5px;
+  margin-left: 1px;
+  border: 0.35px 0px 0px 0px;
+  border: 0.35px solid #A7A1A1;
+}
+.kont1-m{
+  display: block;
+  width: 100%;
+  margin-top: 36.5px;
+
+}
+.kont-m {
+  display: inline;
+  max-width: 491px;
+  width: 100%;
+  height: 132px;
+  margin-left: 18px;
+}
+
+
+.kont-m__img1 {
+  max-width: 129px;
+  width: 100%;
+  margin-top:5px;
+  margin-left: 14px;
+  height: 108px;
+  background: #EEEEEE;
+}
+.kont-m__img1 img {
+
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 108px;
+}
+
+.kont-txt {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 28px;
+  max-width: 250px;
+  width: 100%;
+  height: 89px;
+
+}
+.kont-txt__t1{
+  display: inline;
+  float: left;
+  max-width: 320px;
+  width:60%;
+  height: 100%;
+
+}
+.kont-txt__c1{
+  display: inline;
+  float: right;
+  max-width: 320px;
+  width: 40%;
+  height: 100%;
+  text-align: right;
+
+}
+.kont-txt__h4 {
+  width: 256.4px;
+  height: 23px;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-size: 15.49px;
+  font-weight: 700;
+  line-height: 23.23px;
+  color: #384860;
+}
+.kont-txt__p1 {
+  font-family: "Open Sans";
+  font-size: 12.05px;
+  font-weight: 400;
+  line-height: 18.07px;
+  letter-spacing: 0.172083348px;
+  text-align: left;
+  width: 256.4px;
+  height: 18px;
+}
+.kont-txt__cena {
+  font-family: "Open Sans";
+  font-size: 15.49px;
+  font-weight: 700;
+  line-height: 23.23px;
+  letter-spacing: 0.172083348px;
+  color: #28009B;
+}
+.kont1__line2{
+  width: 99.54%;
+  height: 0px;
+  margin-top: 33px;
+  margin-left: 1px;
+  border: 0.35px 0px 0px 0px;
+  border: 0.35px solid #A7A1A1;
+}
+.pods {
+  display: inline;
+  float: right;
+  margin-top: 15px;
+  margin-right: 5%;
+  font-family: "Open Sans";
+  font-size: 11.55px;
+  font-weight: 400;
+  line-height: 18.07px;
+  letter-spacing: 0.172083348px;
+  text-align: left;
+  color: #5D5D5F;
+
+  
+}
+.pods td {
+  
+  padding-left: 93px;
+  padding-top: 11px;
+}
+
+.kont1__line3 {
+  display: inline-block;
+  width: 99.54%;
+  height: 0px;
+  margin-top: 20px;
+  margin-left: 1px;
+  border: 0.35px 0px 0px 0px;
+  border: 0.35px solid #A7A1A1;
+  overflow: hidden;
+}
+
+.pods2 {
+  display:inline;
+  float: right;
+  margin-top: 5px;
+  margin-right: 4%;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.172083348px;
+  text-align: left;
+  color: #3F3F3F;
+  
+}
+.pods2 td {
+  padding-left: 103px;
+  margin-bottom: 28px;
+}
+
+.customer {
+  
+  width: 100%;
+  max-width: 226px;
+  height: 25px;
+  margin-left: 50px;
+  margin-top: 34px;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.41px;
+  text-align: left;
+  color: #1F1F1F;
+}
+.customer__h4 {
+
+  max-width: 133px;
+  height: 23px;
+  margin-bottom: 8px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
+  color: #050304;
+}
+.customer__h4b {
+  max-width: 111px;
+}
+.customer__data {
+  margin-left: 1px;
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15.57px;
+  text-align: left;
+  color: #000000;
+
+}
+
+
+.quality-menu__td1{
+  max-width: 600px;
+  width: 100% !important;
+  min-width:100%;
+  margin-top: 40px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  color: #424141;
+  background: #f4f5f5;
+}
+.quality-menu__td2{
+  text-align: center;
+}
+.quality-menu__txt__p1 {
+  width: 100%;
+  height: 36px;
+
+}
+.quality-menu__txt__p2 {
+
+  width: 100%;
+  height: 36px;
+}
+.quality-menu__txt__p3 {
+
+  width: 100%;
+  height: 36px;
+
+}
+.quality-menu__txt__p4 {
+  width: 100%;
+  height: 36px;
+}
+
+#quality-img1 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+
+}
+
+#quality-img3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#quality-img4 {
+  margin-bottom:5px;
+}
+
+.main__botnav {
+  height: 54px;
+
+
+}
+.botnav__text {
+  height: 16px;
+  margin-top: 18px;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16.1px;
+  text-align: center;
+  color: black;
+}
+.botnav__text__tb{
+  width: 100%;
+}
+
+.botnav__text__a1 {
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.botnav__text__a2 {
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.botnav__text__a3 {
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.botnav__text__a4 {
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.botnav__text__a5 {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.links {
+  margin-top: 31px;
+  text-align: center;
+}
+.links__logo-a {
+  display: inline-block;
+  margin-left: 27px;
+}
+
+.unsub-cl {
+  display:block;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+#unsub{
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.8px;
+  color: #676767;
+  
+}
+.undimg{
+    width: 100%;
+}
+.botnav__line{
+  margin-top: 44px;
+  border: 1px solid #212121;
+  
+}
+.botnav__line-p2{
+  margin-top: 19px;
+  border: 1px solid #212121;
+}
+.customer__tr{
+  padding-left: 50px;
+}
+.column{
+  width: 100%;
+  max-width: 298px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 20px;
+}
+@media (max-width:600px) {
+    .main{
+        max-width: 350px;
+        height: 100%;
+    }
+    .kont1{
+      max-width: 97%;
+    }
+
+    .kont-m__img1{
+      width: 150%;
+    }
+    .kont-txt{
+      width: 100px;
+      margin-left: 25px;
+      overflow:unset;
+    }
+
+    .kont-txt__t1{
+      float: none;
+    }
+    .kont-txt__c1{
+      display: block;
+      float: none;
+      text-align: left;
+    }
+    .customer-data{
+      overflow:unset;
+      width: 50%;
+      height: 20%;
+    }
+    .customer{
+      margin-left: 18%;
+    }
+    .Shipping{
+      float: none;
+      margin-left: 30%;
+    }
+    .Billing{
+      float: none;
+      margin-top: 15px;
+      margin-left: 30%;
+    }
+    .main__botnav{
+      width: 100%;
+      height: 70px;
+    }
+    .botnav__text{
+      margin-left: 15px;
+    }
+    .botnav__text__a4{
+      margin-top: 6px;
+    }
+    .botnav__text__a5{
+      margin-top: 6px;
+
+    }
+    .links {
+      margin-top: 31px;
+    }
+    .links__logo-a {
+      display:inline-block;
+      margin-left: 5px;
+    }
+}
+    </style>
+</head>
+<body>
+<div class="main">
+        <div class="">
+        <a href="#" id="logo1" ><img src="https://i.ibb.co/gw2g2n0/logo-1.png" ></a>
+        
+        <p class="nr-zamowienia">ORDER#1234</p>
+        <p class="data" >October 23 ,2023</p>
+        <img class="zdj1" src="https://i.ibb.co/Sd77CpV/rect.png" alt="rect">
+        <div class="undimg">
+        <p class="podzdj">We appreciate your purchase!</p>
+        <p class="podzdj2">Hello [Customer's First Name], we're getting your order ready for dispatch. We'll notify you as soon as it's on its way.</p>
+        <p class="podzdj3">— ABC Team</p>
+        <div class="btn_div"><a class="btn1" href="#"><p class="btn1__p1" >Track your  Purchase</p></a></div>
+        </div>
+        <div class="kont1">
+            <h3 class="kont1__p1">Purchase Details</h3>
+            <p class="kont1__line"></p>
+          <div class="kont1-m">
+            <table>
+              <div class="kont-m">
+                <td>
+                <div class="kont-m__img1"><img src="https://i.ibb.co/410h7Qx/img3.png" alt=""></div>
+              </td>
+              <td>
+                <div class="kont-txt">
+                  <div class="kont-txt__t1">
+                    <h4 class="kont-txt__h4">Premium Hoodie</h4>
+                    <p class="kont-txt__p1" >COLOUR : PURPLE </p>
+                    <p class="kont-txt__p1">SIZE : XL</p>
+                    <p class="kont-txt__p1">QTY : 1</p>
+                  </div>
+                  <div class="kont-txt__c1">
+                    <p class="kont-txt__cena">$80.00</p>
+                  </div>
+                </div>
+              </td>
+            </div>
+          </table>
+          <table>
+            <div class="kont-m">
+                <td>
+                  <div class="kont-m__img1"><img src="https://i.ibb.co/wKKJFSw/img2.png" alt=""></div>
+                </td>
+                <td>
+                <div class="kont-txt">
+                  <div class="kont-txt__t1">
+                    <h4 class="kont-txt__h4">Premium Hoodie</h4>
+                    <p class="kont-txt__p1" >COLOUR : ORANGE </p>
+                    <p class="kont-txt__p1">SIZE : XL</p>
+                    <p class="kont-txt__p1">QTY : 1</p>
+                  </div>
+                  <div class="kont-txt__c1">
+                    <p class="kont-txt__cena">$80.00</p>
+                  </div>
+                </div>
+                </td>
+            </div>
+          </table>
+          </div>
+            <p class="kont1__line2"></p>
+            <table class="pods">
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$90.00</td>
+                  </tr>
+                  <tr>
+                    <td>Tax</td>
+                    <td>$00.00</td>
+                  </tr>
+                  <tr>
+                    <td>Shipping</td>
+                    <td>$00.00</td>
+                  </tr>
+            </table>
+            <p class="kont1__line3"></p>
+            <table class="pods2">
+                <tr>
+                    <td>Total</td>
+                    <td>$90.00</td>
+                  </tr>
+            </table>
+                
+            </div>
+
+        <h3 class="customer" >Customer Information</h3>
+        <tr >
+            <td >
+              <table class="column">
+                <td class="customer__tr">
+                      <h4 class="customer__h4">Shipping address</h4>
+                      <p class="customer__data">Jane Doe789 </p>
+                      <p class="customer__data">Greenway Drive</p>
+                      <p class="customer__data">Leaf Town, ZC 54321</p>
+                      <p class="customer__data">Country, (123) 789-0123</p>
+                </td>
+              </table>
+            </td>
+            <td>
+              <table class="column">
+                    <td class="customer__tr">
+                      <h4 class="customer__h4">Billing address</h4>
+                      <p class="customer__data">Jane Doe789 </p>
+                      <p class="customer__data">Greenway Drive</p>
+                      <p class="customer__data">Leaf Town, ZC 54321</p>
+                      <p class="customer__data">Country, (123) 789-0123</p>
+                    </td>
+
+              </table>
+            </td>
+        
+      </tr>
+        <div class="quality-menu">
+                  <table class="quality-menu__td1">
+                        <td class="quality-menu__td2">
+                          <img id="quality-img1" src="https://i.ibb.co/Pg26K25/Vector1.png">
+                          <p class="quality-menu__txt__p1">QUALITY<br>ASSURANCE</p>
+                        </td>
+                        <td class="quality-menu__td2">
+                          <img id="quality-img2" src="https://i.ibb.co/yFQbyxt/Vector2.png">
+                          <p class="quality-menu__txt__p2">FREE<br>SHIPPING</p>
+                        </td>
+                        <td class="quality-menu__td2">
+                          <img id="quality-img3" src="https://i.ibb.co/xqb3hJ6/Vector3.png">
+                          <p class="quality-menu__txt__p3">EASY<br>PAYMENTS </p>
+                        </td>
+                        <td class="quality-menu__td2">
+                          <img id="quality-img4" src="https://i.ibb.co/7WQLL3h/Vector4.png">
+                          <p class="quality-menu__txt__p4">QUICK<br>RETURN</p>
+                        </td>
+                  </table>
+          </div>
+            <nav class="main__botnav">
+              <p class="botnav__line"></p>
+                <div class="botnav__text">
+                  <tr>
+                    <table class="botnav__text__tb">
+                      <td class="botnav_text_tb2"><a class="botnav__text__a1" href="#">Female</a></td>
+                      <td class="botnav_text_tb2"><a class="botnav__text__a2" href="#">Male</a></td>
+                      <td class="botnav_text_tb2"><a class="botnav__text__a3" href="#">Timepieces</a></td>
+                      <td class="botnav_text_tb2"><a class="botnav__text__a4" href="#">Handbags</a></td>
+                      <td class="botnav_text_tb2"><a class="botnav__text__a5" href="#">Spiecial Offers</a></td>
+                    </table>
+                  </tr>
+                </div>
+                <p class="botnav__line-p2"></p>
+            </nav>
+
+            <div class="links" >
+                <div class="links__logo">
+                    <a class="links__logo-a" href="#"><img src="https://i.ibb.co/hsWcYTD/icon1.png" style="width:28px; height:23px"></a>
+                    <a class="links__logo-a" href="#"><img src="https://i.ibb.co/ZWSk3Dz/icon2.png" style="width:25px; height:24px"></a>
+                    <a class="links__logo-a" href="#"><img src="https://i.ibb.co/F0BTPZB/icon3.png" style="width:14px; height:27px"></a>
+                    <a class="links__logo-a" href="#"><img src="https://i.ibb.co/Hd9fFw6/icon4.png" style="width:20px; height:26px"></a>
+                    <a class="links__logo-a" href="#"><img src="https://i.ibb.co/mGDrpHz/icon5.png" style="width:13px; height:23px"></a>
+                </div>
+            </div>
+            <div class="unsub-cl">
+              <a id="unsub" href="#">Unsubscribe link</a>
+            </div>
+  </div>
+</div>
+</body>
+</html>      

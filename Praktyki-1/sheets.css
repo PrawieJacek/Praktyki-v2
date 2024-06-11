@@ -1,0 +1,538 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: rgb(226, 226, 226);
+  margin: 0;
+}
+
+.main {
+  height: 1972px;
+  width: 600px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 auto;
+}
+
+#logo1 {
+  margin-top: 42px;
+  margin-left: 221px;
+}
+
+.nr-zamowienia {
+  font-family: Judson;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 34.89px;
+  margin-top: 58px;
+  margin-left: 223px;
+  margin-bottom: 7px;
+}
+
+.data {
+  font-family: Judson;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20.7px;
+  text-align: left;
+  margin-top: 7px;
+  margin-left: 241px;
+}
+
+.zdj1 {
+  margin-top: 24px;
+  margin-left: 26px;
+  width: 548px;
+  height: 335px;
+  background-image: url(img/rect.png);
+}
+.zdj1__p1 {
+  margin-top: 120px;
+  margin-left: 15px;
+  position: absolute;
+  font-family: Inria Serif;
+  font-size: 63.25px;
+  font-weight: 700;
+  line-height: 75.84px;
+  color: white;
+}
+.zdj1__p2 {
+  margin-top: 207px;
+  margin-left: 15px;
+  position: absolute;
+  font-family: Inria Serif;
+  font-size: 63.25px;
+  font-weight: 700;
+  line-height: 75.84px;
+  color: white;
+}
+
+.podzdj {
+  margin-left: 147px;
+  margin-top: 34px;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.41px;
+  color: #1F1F1F;
+  width: 313px;
+  height: 25px;
+}
+
+.podzdj2 {
+  margin-top: 12px;
+  margin-left: 32px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.05px;
+  text-align: center;
+  width: 542px;
+  height: 44px;
+}
+
+.podzdj3 {
+  width: 75px;
+  height: 15px;
+  margin-top: 11px;
+  margin-left: 266px;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 14.52px;
+  text-align: center;
+}
+
+.btn1 {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 202px;
+  padding: 13px 30px 13px 38px;
+  border-radius: 8px;
+  background: #302F2F;
+  text-decoration-line: none;
+}
+.btn1__p1 {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  width: 128px;
+  height: 24px;
+  color: white;
+}
+
+.kont1 {
+  width: 548px;
+  height: 548px;
+  margin-top: 37px;
+  margin-left: 27px;
+  background-color: #F4F5F5;
+}
+.kont1__p1 {
+  position: absolute;
+  width: 173px;
+  height: 25px;
+  margin-top: 22px;
+  margin-left: 23px;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.41px;
+  text-align: left;
+  color: #1F1F1F;
+}
+.kont1__line {
+  position: absolute;
+  width: 545.5px;
+  height: 0px;
+  margin-top: 60.5px;
+  margin-left: 1px;
+  border: 0.35px 0px 0px 0px;
+  border: 0.35px solid #A7A1A1;
+}
+
+.kont-m {
+  position: absolute;
+  width: 491px;
+  height: 132px;
+  margin-top: 103px;
+  margin-left: 18px;
+}
+.kont-m__img1 {
+  margin-left: 14px;
+  width: 129px;
+  height: 108px;
+  background: #EEEEEE;
+}
+.kont-m__img2 {
+  margin-top: -102px;
+  width: 153px;
+}
+
+.kont-txt {
+  margin-top: -98px;
+  width: 320px;
+  height: 89px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.kont-txt__h4 {
+  width: 256.4px;
+  height: 23px;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-size: 15.49px;
+  font-weight: 700;
+  line-height: 23.23px;
+  text-align: left;
+  color: #384860;
+}
+.kont-txt__p1 {
+  font-family: "Open Sans";
+  font-size: 12.05px;
+  font-weight: 400;
+  line-height: 18.07px;
+  letter-spacing: 0.172083348px;
+  text-align: left;
+  width: 256.4px;
+  height: 18px;
+}
+.kont-txt__cena {
+  height: 23px;
+  width: 55px;
+  float: right;
+  margin-top: -77px;
+  font-family: "Open Sans";
+  font-size: 15.49px;
+  font-weight: 700;
+  line-height: 23.23px;
+  letter-spacing: 0.172083348px;
+  text-align: left;
+  color: #28009B;
+}
+
+.kont-m2 {
+  position: absolute;
+  width: 491px;
+  height: 132px;
+  margin-top: 227px;
+  margin-left: 18px;
+}
+.kont-m2__img1 {
+  margin-left: 14px;
+  width: 129px;
+  height: 108px;
+  background: #EEEEEE;
+}
+.kont-m2__img2 {
+  margin-top: -94px;
+  margin-left: 14px;
+}
+
+.kont1__line2 {
+  position: absolute;
+  width: 545.5px;
+  height: 0px;
+  margin-top: 370px;
+  margin-left: 1px;
+  border: 0.35px 0px 0px 0px;
+  border: 0.35px solid #A7A1A1;
+}
+
+.pods {
+  position: absolute;
+  width: 44px;
+  height: 18px;
+  margin-top: 375px;
+  margin-left: 224px;
+  font-family: "Open Sans";
+  font-size: 11.55px;
+  font-weight: 400;
+  line-height: 18.07px;
+  letter-spacing: 0.172083348px;
+  text-align: left;
+  color: #5D5D5F;
+}
+.pods td {
+  padding-left: 93px;
+  padding-top: 11px;
+}
+
+.kont1__line3 {
+  position: absolute;
+  width: 545.5px;
+  height: 0px;
+  margin-top: 481px;
+  margin-left: 1px;
+  border: 0.35px 0px 0px 0px;
+  border: 0.35px solid #A7A1A1;
+}
+
+.pods2 {
+  position: absolute;
+  margin-left: 214px;
+  margin-top: 496px;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.172083348px;
+  text-align: left;
+  color: #3F3F3F;
+}
+.pods2 td {
+  padding-left: 103px;
+  margin-bottom: 28px;
+}
+
+.customer {
+  margin-top: 34px;
+  width: 226px;
+  height: 25px;
+  margin-left: 50px;
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 25.41px;
+  text-align: left;
+  color: #1F1F1F;
+}
+.customer__h4 {
+  max-width: 133px;
+  height: 23px;
+  margin-bottom: 8px;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
+  text-align: center;
+  color: #050304;
+}
+.customer__h4b {
+  max-width: 111px;
+}
+.customer__data {
+  margin-left: 1px;
+  margin-bottom: 4px;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15.57px;
+  text-align: left;
+  color: #000000;
+}
+
+.customer-data {
+  width: 410px;
+  height: 107px;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.Shipping {
+  width: 133px;
+  height: 107px;
+}
+
+.Billing {
+  width: 117px;
+  height: 107px;
+  margin-left: 293px;
+  margin-top: -107px;
+}
+
+.quality-menu {
+  width: 600px;
+  height: 149px;
+  margin-top: 40px;
+  background: #F4F5F5;
+}
+.quality-menu__txt {
+  position: absolute;
+  width: 505px;
+  margin-top: 85px;
+  font-family: Inter;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17.94px;
+  text-align: center;
+  color: #424141;
+}
+.quality-menu__txt__p1 {
+  position: absolute;
+  margin-left: 47px;
+  width: 80px;
+  height: 36px;
+}
+.quality-menu__txt__p2 {
+  position: absolute;
+  width: 61px;
+  height: 36px;
+  margin-left: 207px;
+}
+.quality-menu__txt__p3 {
+  position: absolute;
+  width: 70px;
+  height: 36px;
+  margin-left: 348px;
+}
+.quality-menu__txt__p4 {
+  position: absolute;
+  width: 53px;
+  height: 36px;
+  margin-left: 499px;
+}
+
+#quality-img1 {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 70px;
+}
+
+#quality-img2 {
+  position: absolute;
+  margin-top: 36px;
+  margin-left: 212px;
+}
+
+#quality-img3 {
+  position: absolute;
+  margin-top: 38px;
+  margin-left: 364px;
+}
+
+#quality-img4 {
+  position: absolute;
+  margin-top: 44px;
+  margin-left: 510px;
+}
+
+.botnav {
+  width: 600px;
+  height: 54px;
+  margin-top: 44px;
+  border-bottom: 1px solid #212121;
+  border-top: 1px solid #212121;
+}
+.botnav__text {
+  width: 550px;
+  height: 16px;
+  margin-top: 18px;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.1px;
+  text-align: left;
+  color: black;
+}
+.botnav__text__a1 {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 25px;
+}
+.botnav__text__a2 {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 135px;
+}
+.botnav__text__a3 {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 228px;
+}
+.botnav__text__a4 {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 362px;
+}
+.botnav__text__a5 {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left: 488px;
+}
+
+.links {
+  margin-top: 31px;
+  margin-left: 127px;
+}
+.links__logo svg {
+  display: inline;
+  margin-left: 27px;
+}
+
+#unsub {
+  display: inline-block;
+  width: 93px;
+  height: 14px;
+  margin-top: 50px;
+  margin-left: 254px;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13.8px;
+  text-align: center;
+  color: #676767;
+}/*# sourceMappingURL=sheets.css.map */
